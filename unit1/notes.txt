@@ -1,0 +1,16 @@
+sed
+-$ sed 's/snow/rain/' forests.txt
+--sed stands for "stream editor". It accepts standard input and modifies it based on an expression, before displaying it as output data
+---s: stands for "substitution".
+   snow: the search string, the text to find.
+   rain: the replacement string, the text to add in place.
+
+uniq
+-$ uniq lakes.txt
+--uniq, short for "unique", takes a filename or standard input and prints out every line, removing any exact duplicates
+
+sort
+-$ sort lakes.txt
+--sort takes a filename or standard input and orders each line alphabetically, printing it to standard output.
+
+

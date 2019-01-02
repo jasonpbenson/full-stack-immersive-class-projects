@@ -1,0 +1,112 @@
+    1  git --version
+    2  xcode-select --install
+    3  sudo gcc --version
+    4  $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    5  $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    6  git --version
+    7  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    8  cls
+    9  clear
+   10  git config --global user.name "Jason Benson"
+   11  git config --global user.email "jasonbenson3rd@gmail.com"
+   12  clear
+   13  cd documents/web-projects/test-site
+   14  git init
+   15  git add .
+   16  git status
+   17  git commit
+   18  get status
+   19  git status
+   20  touch .gitignore
+   21  https://github.com/jasonpbenson/mdn-tutorial-test-site.git
+   22  git remote
+   23  git push
+   24  git remote add https://github.com/jasonpbenson/mdn-tutorial-test-site
+   25  git push https://github.com/jasonpbenson/mdn-tutorial-test-site
+   26   git push --set-upstream https://github.com/jasonpbenson/mdn-tutorial-test-site master
+   27  git --help
+   28  git push https://github.com/jasonpbenson/mdn-tutorial-test-site
+   29  git push --set-upstream https://github.com/jasonpbenson/mdn-tutorial-test-site master
+   30  git push https://github.com/jasonpbenson/mdn-tutorial-test-site/tree/termpush
+   31   git push --set-upstream https://github.com/jasonpbenson/mdn-tutorial-test-site/tree/termpush master
+   32  git push https://github.com/jasonpbenson/mdn-tutorial-test-site
+   33  git push --set-upstream https://github.com/jasonpbenson/mdn-tutorial-test-site master
+   34  git add .
+   35  git status
+   36  git commit
+   37  cd ~/Doctuments/web-projects/test-site
+   38  cd ~/Documents/web-projects/test-site
+   39  (open ~Documents/web-projects/test-site; 
+   40  cd ~/Documents/web-projects/test-site
+   41  git init
+   42  git ad .
+   43  git add .
+   44  git status
+   45  git commit
+   46  cd
+   47  pwd
+   48  ls
+   49  cd development
+   50  ls
+   51  cd development
+   52  ls
+   53  cd images
+   54  cd development
+   55  cd 11
+   56  cd 11
+   57  cd 11
+   58  pwd
+   59  ls
+   60  cd ~
+   61  cd development
+   62  cd 11ls
+   63  mkdir
+   64  mkdir unit1
+   65  ls
+   66  mv unit1 unit2
+   67  ls
+   68  ls
+   69  ls -la
+   70  cd /etc
+   71  ls
+   72  ls -la
+   73  cd ..
+   74  ls -la
+   75  cd ..
+   76  ls -la
+   77  cd ~
+   78  cd development
+   79  ls -la
+   80  cd~
+   81  cd 11
+   82  cd 11
+   83  cd /etc
+   84  mv unit2 unit1
+   85  cd development
+   86  touch test.txt
+   87  cd~
+   88  cd ~
+   89  ls
+   90  cd development
+   91  mv unit2 unit1
+   92  touch test.txt
+   93  sudu su
+   94  sudo su
+   95  whoami
+   96  cd ~
+   97  cd ~
+   98  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+   99  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  100  which zsh
+  101  cd ~/Development/unit1/
+  102  ls
+  103  cd ..
+  104  cd ..
+  105  git itit
+  106  git init
+  107  cd unit1
+  108  cd ~/unit1
+  109  cd ~/Development/unit1/
+  110  git init
+  111  clear
+  112  history > history.txt
