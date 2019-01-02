@@ -1,0 +1,68 @@
+/* body{
+    background-color: blue;
+} */
+
+img{
+    width: 350px;
+}
+
+.card{
+    width: 350px;
+    height: 673px;
+    perspective: 2000px;
+    border: 2px solid coral;
+}
+
+.card-holder{
+    width: 350px;
+    transition: all 2s;
+    position: relative;
+    /* tell all child elements they are in a 3D parent */
+    transform-style: preserve-3d;
+    /* transform-origin: 80%; */
+}
+
+.card-front, .card-back{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    backface-visibility: hidden; 
+}
+/* comma = 'or' ie 'grab everything associated with a or b */
+
+.card-front{
+    transform: rotateY(180deg);
+}
+
+.flip{
+    transform: rotateY(180deg);
+}
+
+#parent{
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+    padding: 10px;
+    background-color: #4f5f6c;
+    perspective: 800px;
+}
+
+#parent div{
+    padding: 50px;
+    border: 1px solid #0912ee;
+}
+
+#threeD{
+    background-color: cornflowerblue;
+    transform: rotateX(45deg); 
+}
+
+#threeD2{
+    background-color: aquamarine;
+    transform: rotateY(45deg);
+}
+
+#threeD3{
+    background-color: blanchedalmond;
+    transform: rotateZ(45deg);
+}

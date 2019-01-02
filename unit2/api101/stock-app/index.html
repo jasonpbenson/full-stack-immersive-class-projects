@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Smythe|UnifrakturCook:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="https//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <img class="image-left" src="images/danza-de-la-muerte-05.png"/>
+                <img class="image-right" src="images/danza-de-la-muerte-11.png"/>
+                <h1 class="text-center">Get real-time stock quotes</h1>
+                <form class="stock-form">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="symbol" placeholder="for multilple selections separate entries with a comma"/>
+                        <button type="submit" class="btn btn-dark">Get Quote</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12">
+                <table id="stock-table" class="table table-striped">
+                    <thread>
+                        <tr>
+                            <th>stock symbol</th>
+                            <th>company name</th>
+                            <th>high</th>
+                            <th>low</th>
+                            <th>daily change</th>
+                        </tr>
+                    </thread>
+                    <tbody id="stock-body">
+                        <tr>
+                            <!-- <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td> -->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

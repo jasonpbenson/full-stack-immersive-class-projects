@@ -1,0 +1,84 @@
+body{
+    background-color: cornsilk;
+    text-align: center;
+}
+
+#board{
+    max-width: 640px;
+    min-width: 320px;
+    margin: auto;
+}
+
+.prompts{
+    height: 50px;
+    margin: 10px;
+}
+
+#computer-opponent{
+    background-color: coral;
+    outline: none;
+    width: 185px;
+    height: 40px; 
+    font-family: 'Germania One', cursive;
+    font-size: 20px;
+    color: #fff; 
+    display: none;
+}
+
+#human-opponent{
+    background-color: coral;
+    outline: none;
+    width: 185px;
+    height: 40px; 
+    font-family: 'Germania One', cursive;
+    font-size: 20px;
+    color: #fff; 
+    display: none;
+}
+
+#message{
+    text-align: center;
+    font-size: 40px;
+    color: cornflowerblue; 
+    font-family: 'Germania One', cursive;
+    margin-bottom: 20px;
+    /* display: none; */
+}
+
+.square{
+    background-color: cornflowerblue; 
+    border: 2px solid plum; 
+    width: 150px;
+    height: 150px;
+    outline: none;
+    font-size: 60px; 
+    color: #fff; 
+    margin: 5px; 
+    font-family: 'Germania One', cursive;
+}
+
+.square:hover{
+    background-color: coral;
+}
+
+.winning-square{
+    background-color: plum;
+}
+
+#reset-button{
+    display: flex;
+    justify-content: center;
+    background-color: coral;
+    /* border: 2px solid cornflowerblue; */
+    margin-top: 20px; 
+    outline: none;
+    width: 185px;
+    height: 40px; 
+    font-family: 'Germania One', cursive;
+    font-size: 30px;
+    color: #fff; 
+}
+
+.button{
+    display: none;
+}

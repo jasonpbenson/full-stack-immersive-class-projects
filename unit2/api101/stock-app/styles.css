@@ -1,0 +1,39 @@
+body{
+    background-color: lavenderblush;
+    margin: 100px auto;
+}
+
+h1{
+    font-family: 'Smythe', cursive;
+    font-size: 50px;
+}
+
+.container{
+    position: relative;
+    margin: 0 auto;
+}
+
+button{
+    outline: none;
+}
+
+
+img{
+    position: absolute;
+    width: 200px;
+}
+
+.image-left{
+    top: 65px;
+    left: -190px;
+}
+
+.image-right{
+    top: 65px;
+    left: 1130px;
+}
+
+.col-12{
+    font-family: 'Smythe', cursive;
+    font-size: 30px;
+}

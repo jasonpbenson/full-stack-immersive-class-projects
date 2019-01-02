@@ -1,0 +1,35 @@
+body{
+    font-family: serif;
+}
+
+#assignment-instructions{
+    color: cornflowerblue;
+    font-family: sans-serif;
+}
+
+code{
+    color: red;
+    font-family: monospace;
+}
+
+.green > code{
+    color: forestgreen;
+}
+
+ol li{
+    font-family: sans-serif;
+}
+
+li + li{
+    background: black;
+    color: white;
+}
+
+ol > li{
+    background: black;
+    color: white;
+}
+
+.green > code{
+    color: forestgreen;
+}

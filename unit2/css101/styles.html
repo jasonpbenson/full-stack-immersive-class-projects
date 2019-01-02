@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        .meme-holder{
+            width: 1000px;
+            background-color: red;
+            margin: 50px;
+            padding: 50px;
+            border: solid 10px black;
+            /* text-align: center; */
+        }
+        img{
+            width: 300px;           
+        }
+        
+        #float-me{
+            float: right;
+        }
+
+        #block1{
+            background-color: red;
+            /* height: 100px;
+            width: 100px; */
+        }
+        
+        #block2{
+            background-color: green;
+            /* height: 100px;
+            width: 100px; */
+        }
+
+        #block3{
+            background-color: cornflowerblue;
+            /* height: 100px;
+            width: 100px; */
+        }
+
+        .block{
+            height: 100px;
+            width: 100px;
+            /* padding: 10px; this will bring background color, aka, simply increase the size of the individual blocks by 10px */
+            margin: 10px;
+            /* display: inline */
+            display: inline-block
+        }
+
+        #block-wrapper{
+            text-align: right
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+
+    <div class="float-ex">
+            <div class="float-me">
+                <img src="http://starecat.com/content/wp-content/uploads/two-states-of-every-programmer-i-am-god-i-have-no-idea-what-im-doing.jpg" />
+            </div>
+            I feel like this sometimes. I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes. I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.I feel like this sometimes.
+        </div>
+    
+        <!-- <div class="meme-holder">
+                <img src="http://starecat.com/content/wp-content/uploads/two-states-of-every-programmer-i-am-god-i-have-no-idea-what-im-doing.jpg" />
+    </div> --> 
+
+    <h1>BLOCK ELEMENT</h1>
+    <ol>
+        <li>A Block element, by default, takes up all of the space to the right and left, internal to it's parent</li>
+        <li>A Block can can have height and width </li>
+        <li>Nothing can ever be on either side (internal to the parent)because it's 100%. if you change the width, it will just add margin.
+            Blocks will ignore margin you add, because they already have 100%
+        </li>
+        <li>Can be > 100%</li>
+
+    </ol>
+    <div id="block-wrapper">
+        <div id="block1" class="block"></div>
+        <div id="block2" class="block"></div>
+        <div id="block3" class="block"></div>
+    </div>
+
+    <h1>Inline elements</h1>
+    <ol>
+        <li>1. Respect left and right padding, left and right margin
+        but will ignore top and bottom</li>
+        <li>2. Couldn't care less what is left or right.</li>
+        <li>3. With a few exceptions (namely images) you CANNOT tell an inline
+        element how big to be.</li>
+        <li>4. Will happily ignore all block level rules unless forced to do so</li>
+    </ol>
+    <h1>Inline Block</h1>
+    <ol>
+        <li>. Can have stuff on either side (inline positive)</li>1
+        <li>2. Can have height/width (block positive)</li>
+        <li>3. Can have top/bottom padding/margin (block positive)</li>
+    </ol>
+
+</body>
+</html>

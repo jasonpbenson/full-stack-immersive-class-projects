@@ -1,0 +1,24 @@
+body {
+    /* background-color: cornflowerblue;  */
+    background: url(./ComicCharacter110.svg);
+    background-position: center;
+    height: 200vh;
+    text-align: center;
+    
+}
+
+h1{
+    font-size: 28px;
+    margin: 40px 0px 0px; 
+    font-family: 'Nosifer', cursive;
+    color: red;
+}
+
+.time-unit, .time-unit span{
+    display: inline-block;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid cornflowerblue;
+    font-family: 'Germania One', cursive;
+}

@@ -1,0 +1,97 @@
+<!-- SCOPE -->
+<!-- –determines what can see a variable -->
+<!-- 1. Global
+––Has no parent
+––anyone can see it anywhere
+––if it belongs to the window, or is defined outside of all functions (just inside of a script tag), it is global
+––super variable
+––ideal for small programs
+––dangerous for large programs  -->
+<!-- ––in python globals are variables that are not indented -->
+<!-- 2. Local
+––local variables live inside of functions and are visible and changable only to that function and its child functions -->
+
+
+<script>
+    // this is not inside any function, so it's a global
+    // var iAmGlobal = 1;
+    // console.log(iAmGlobal);
+    // console.log(window.iAmGlobal);
+
+    // function checkScope(){
+    //     // this variable is not a global bc it's inside of a function
+    //     // var iAmGlobal = 2;
+    //     iAmGlobal ++;
+    //     console.log(iAmGlobal);
+
+    //     // Don't use a variable inside a function that has a global (ie don't reuse name)
+    //     // bc it will be confusing
+    // }
+
+    // checkScope();
+    // console.log(iAmGlobal);
+
+    // var a = 1;
+    // function child(){
+    //     var b = 2; 
+    //     console.log(a); //global
+    //     console.log(b); //local
+    //     for (var i = 0; i < 10; i ++){
+    //         a ++
+    //     }
+    //     function grandChild(){
+    //         console.log(`I am a grandchild. I can see and change my stuff,
+    //         my parent's stuff, and their parent's stuff`)
+    //         a++
+    //         b++
+    //     }
+    // grandChild();
+    // console.log(a);
+    // console.log
+
+    // }
+    // child();
+
+    // states of a variable
+    // –declared
+    // ––JS knows it exists
+    // ––a thing can be declared but not defined
+
+    // –undeclared
+    // ––no var x anywhere 
+    // –init/assigned –not only does it exist, it has a value
+
+// <!-- HOISTING -->
+    // Anytime you have the word var, JS will take the 
+    // var and put it at the top of the function/global
+    // var q = 1;
+    // function p(){
+    //     console.log(q) //log global, 1
+    //     var q = 3;
+    // }
+    // p();
+    //code above will break because the var inside the function will be moved to the
+    //top of the function without it's definition (in this case 3) so it will return
+    //an empty value (undefined)
+
+    // in addition to var JS got a facelift in 2016 that added "let" and "const"
+    // "let" and "const" replace var
+    // let is a block level variable
+    // it lives as long as the {} it's inside of do
+    
+    var i
+    for (i = 0; i < 10; i++){
+
+    }
+    console.log(i); 
+<!-- 
+    for (let j = 0; j < 10; j++){
+
+    }
+    console.log(j) -->
+
+    for (const k = 0; k < 10; k++){
+        
+    }
+
+</script>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Browser uses this, so do search engines -->
+    <title>Carnival of Errors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+        /* div with no . and no # will target a tag */
+        /* a # will target an id  */
+        /* a . will target a class */
+        /* div{ */
+        /* #gallery-wrapper{
+            border: 6px solid rgba(179, 182, 39, 0.726); 
+            text-align: center;
+        }
+        #top-section{
+            border: 2px dashed rgb(67, 67, 170) 
+        }
+        #middle-section{
+            border: 2px dashed rgb(233, 142, 23)
+        }
+        #bottom-section{
+            border: 2px dashed rgb(27, 192, 221) 
+        } */
+        * {
+            box-sizing: border-box;
+        }
+        
+        .column1 {
+            float: left;
+            width: 15%;
+            padding: 10px;
+            border: 3px solid rgb(67, 67, 170)
+        }
+
+         .column2 {
+            float: left;
+            width: 85%;
+            padding: 10px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both; 
+        }
+
+        .thumb{
+            width: 100%
+
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- a wrapper for the entire gallery -->
+    <!-- does nothing but organize/structure content  -->
+
+    <div>
+        <h1 class="header" style="font-family: 'Srisakdi', cursive;">the devils</h1>
+    </div>
+
+    <div class="row">
+    <!-- an id is unique on a page
+    a class is not unique, but groups things together -->
+        <div class="column1">
+            <img class="thumb" src="manuscript-creature-01.jpg" onclick="bigImage.src = this.src" />
+            <img class="thumb" src="manuscript-creature-02.jpg" onclick="bigImage.src = this.src" />
+            <img class="thumb" src="manuscript-creature-04.jpg" onclick="bigImage.src = this.src" />
+            <img class="thumb" src="manuscript-creature-05.jpg" onclick="bigImage.src = this.src" />
+            <img class="thumb" src="manuscript-creature-06.jpg" onclick="bigImage.src = this.src" />
+            <img class="thumb" src="manuscript-creature-07.jpg" onclick="bigImage.src = this.src" />
+            <img class="thumb" src="manuscript-creature-08.jpg" onclick="bigImage.src = this.src" />
+            <img class="thumb" src="manuscript-creature-09.jpg" onclick="bigImage.src = this.src" />
+            <img class="thumb" src="manuscript-creature-10.jpg" onclick="bigImage.src = this.src" />
+            <img class="thumb" src="manuscript-creature-11.jpg" onclick="bigImage.src = this.src" />
+            <img class="thumb" src="manuscript-creature-12.jpg" onclick="bigImage.src = this.src" />
+            <img class="thumb" src="manuscript-creature-13.jpg" onclick="bigImage.src = this.src" />
+            <img class="thumb" src="manuscript-creature-14.jpg" onclick="bigImage.src = this.src" />
+            <img class="thumb" src="manuscript-creature-15.jpg" onclick="bigImage.src = this.src" />
+        </div>
+        <div class="column2">
+            <img src="manuscript-creature-15.jpg" name="bigImage" />
+        </div>
+    </div>
+    
+
+</body>
+</html>

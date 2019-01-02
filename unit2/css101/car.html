@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+    .fixed-elements{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .relative-elements{
+        position: relative;
+        display: inline-block;
+        
+    }
+
+    #body1{
+        height: 225px;
+        width: 300px;
+        background-color: white;
+        border: solid 4px black;
+        top: 50px;
+        left: 50px; 
+        border-radius: 25px;
+    } 
+   
+    #body2{
+        height: 90px;
+        width: 180px;
+        background-color: white;
+        border: solid 4px black;
+        top: 80px;
+        left: 260px; 
+        border-radius: 10px; 
+        transform: skew(40deg)
+    }
+    #body3{
+        height: 100px;
+        width: 260px;
+        background-color: white;
+        border: solid 4px black;
+        top: 175px;
+        left: 280px; 
+        border-radius: 20px; 
+        transform: skew(10deg)
+    }
+
+    #body4{
+        height: 25px;
+        width: 520px;
+        background-color: white;
+        border: solid 4px black;
+        top: 279px;
+        left: 40px; 
+        border-radius: 15px; 
+
+    }
+
+    #tire1{
+        height: 100px;
+        width: 100px; 
+        background-color: black;
+        top: 250px;
+        left: 80px;
+        border-radius: 50px; 
+        border: solid 2px lightgray; 
+    }
+
+    #hubcap1{
+        height: 50px;
+        width: 50px;
+        background-image: radial-gradient(circle, rgb(216, 216, 216), rgb(54, 54, 54), rgb(255, 255, 255));
+        top: 277px;
+        left: 105px;
+        border-radius: 25px; 
+        border: solid 2px lightgray; 
+    }
+
+    #tire2{
+        height: 100px;
+        width: 100px; 
+        background-color: black;
+        top: 250px;
+        left: 400px;
+        border-radius: 50px; 
+        border: solid 2px lightgray; 
+    }
+
+    #hubcap2{
+        height: 50px;
+        width: 50px;
+        background-image: radial-gradient(circle, rgb(216, 216, 216), rgb(54, 54, 54), rgb(255, 255, 255));
+        top: 276px;
+        left: 426px;
+        border-radius: 25px; 
+        border: solid 2px lightgray; 
+    }
+
+    #window1{
+        height: 60px;
+        width: 100px;
+        background-image: linear-gradient(to bottom left, rgb(47, 188, 243), rgb(253, 253, 253));
+        border-radius: 10px; 
+        transform: skew(40deg);
+        border: solid 2px black;
+        top: 100px;
+        left: 325px;
+    }
+
+    #fill{
+        height: 50px;
+        width: 121px;
+        background-color: white;
+        left: 358px;
+        top: 172px; 
+        border-radius: 0px; 
+    }
+
+    #fill2{
+        height: 60px;
+        width: 50px;
+        background-color: white;
+        left: 320px;
+        top: 190px; 
+        border-radius: 0px; 
+    }
+
+    #background-sky{
+        height: 320px;
+        width: 2000px;
+        background-image: linear-gradient(to bottom left, rgb(47, 188, 243), rgb(253, 253, 253), rgb(240, 192, 105));
+        padding: 0px; 
+    }
+
+    #road{
+        height: 80px;
+        width: 2000px;
+        background-color: rgb(44, 44, 44);
+        padding: 0px;
+        top: -5px;
+        left: 0px; 
+    }
+
+    #road-stripe1{
+        height: 5px;
+        width: 2000px;
+        background-color: yellow;
+        padding: 0px;
+        top: -50px;  
+        left: 0px; 
+    }
+
+    #road-stripe2{
+        height: 5px;
+        width: 2000px;
+        background-color: yellow;
+        padding: 0px;
+        top: -58px;  
+        left: 0px; 
+    }
+
+     #cross {
+      background: red;
+      height: 100px;
+      width: 20px;
+      top: 90px;
+      left: 150px;
+    }
+    #cross:after {
+      background: red;
+      content: "";
+      height: 20px;
+      left: -40px;
+      position: absolute;
+      top: 40px;
+      width: 100px;
+    }
+
+    #tail-light{
+        height: 40px;
+        width: 20px;
+        background-image: radial-gradient(rgb(255, 255, 255), rgb(252, 62, 62), rgb(255, 0, 0));
+        top: 210px;
+        left: 45px;
+        border: solid 2px black;
+        border-radius: 15px 
+    }
+
+    #head-light{
+        height: 40px;
+        width: 35px;
+        background-image: radial-gradient(rgb(255, 255, 255), rgb(247, 245, 138), rgb(255, 217, 0));
+        top: 190px;
+        left: 515px;
+        border: solid 2px black;
+        border-radius: 50px 
+    }
+
+    #emergency-light{
+        height: 25px;
+        width: 40px;
+        background-image: radial-gradient(rgb(255, 255, 255), rgb(252, 62, 62), rgb(255, 0, 0));
+        top: 54px;
+        left: 354px;
+        border: solid 2px black;
+        border-radius: 20px 
+    }
+
+    #stripe{
+        height: 45px;
+        width: 405px;
+        top: 200px;
+        left: 72px;      
+        background-image: url(checker-pattern.png);
+        background-size: 45px 45px;
+        background-position: left;
+        background-repeat: repeat; 
+    }
+
+    #sun{
+        height: 100px;
+        width: 100px;
+        background-image: radial-gradient(rgb(255, 237, 73), rgb(253, 152, 36), rgb(248, 248, 248));
+        opacity: .8;
+        border-radius: 50px; 
+        top: -415px;
+        left: 5px; 
+    }
+
+    #octagon{
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+    }
+
+    #octagon:before{
+        content: "";
+        width: 100px;
+        height: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-bottom: 29px solid red;
+        border-left: 29px solid #eee;
+        border-right: 29px solid #eee;
+    }
+
+    #octagon:after{
+        content: "";
+        width: 100px;
+        height: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: 29px solid red;
+        border-left: 29px solid #eee;
+        border-right: 29px solid #eee;
+    }     
+    
+    </style>
+
+</head>
+<body>
+
+    <div>
+
+        <div class="relative-elements">
+            <div id="background-sky" class="relative-elements"></div>
+            <div id="road" class="relative-elements"></div>
+            <div id="road-stripe1" class="relative-elements"></div>
+            <div id="road-stripe2" class="relative-elements"></div>
+        </div>
+
+        <div class="relative-elements">
+            <div id="sun" class="relative-elements"></div>
+        </div>
+
+        <div class="fixed-elements">
+            <div id="body4" class="fixed-elements"></div>
+            <div id="body3" class="fixed-elements"></div>
+            <div id="body2" class="fixed-elements"></div>
+            <div id="window1" class="fixed-elements"></div>
+            <div id="body1" class="fixed-elements"></div>
+        </div>
+
+        <div class="fixed-elements">
+            <div id="tire1" class="fixed-elements"></div>
+            <div id="tire2" class="fixed-elements"></div>
+            <div id="fill" class="fixed-elements"></div>
+            <div id="fill2" class="fixed-elements"></div>
+        </div>
+        
+        <div class="fixed-elements">
+            <div id="hubcap1" class="fixed-elements"></div>
+            <div id="hubcap2" class="fixed-elements"></div>
+            <div id="cross" class="fixed-elements"></div>
+            <div id="tail-light" class="fixed-elements"></div>
+            <div id="head-light" class="fixed-elements"></div>
+            <div id="emergency-light" class="fixed-elements"></div>
+            <div id="stop-sign1" class="fixed-elements"></div>
+            <div id="stop-sign2" class="fixed-elements"></div>
+        </div>
+
+        <div class+"fixed-elements">
+            <div id="stripe" class="fixed-elements" src="checker-pattern.png"></div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

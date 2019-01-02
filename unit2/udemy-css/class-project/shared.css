@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.main-header{
+    width: 100%;
+    position: fixed;
+    background: rgb(72, 72, 194);
+    padding: 8px 16px;
+}
+
+.main-header > div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand{
+    color: rgb(252, 239, 124);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.main-nav{
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 75px);
+    vertical-align: middle;
+}
+
+.main-nav__items{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item{
+    display: inline-block;
+}
+
+.main-nav__item > a{
+    color: rgb(252, 239, 124);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 3px 0;
+}
+
+/* .main-nav__item a::after{
+    content: "(Link)";
+    color: cadetblue;
+} */
+
+.main-nav__item a:hover,
+.main-nav__item a:active{
+    color: white;
+    border-bottom: 5px solid white;
+}
+
+/* .main-nav__item a:active{
+    color: white;
+} */
+
+.main-nav__item--cta a{
+    color: white;
+    background-color: rgb(45, 167, 160);
+    padding: 8px 16px;
+    border-radius: 16px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active{
+    color: rgb(45, 167, 160);
+    background-color: white;
+    border: none;
+}
+
+.main-footer{
+    background: black;
+    padding: 32px;
+    margin-top: 48px;
+}
+
+.main-footer__links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-footer__link{
+    display: inline-block;
+    margin: 0 16px;
+
+}
+
+.main-footer__link a{
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active{
+    color: aqua;
+}
+
+.button{
+    background: rgb(72, 72, 194);
+    color: white;
+    font: inherit;
+    border: 1.5px solid rgb(72, 72, 194);
+    padding: 8px;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active{
+    background: white;
+    color: rgb(72, 72, 194);
+}
+
+.button:focus{
+    outline: none;
+}

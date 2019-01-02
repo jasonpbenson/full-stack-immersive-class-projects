@@ -1,0 +1,112 @@
+<!-- HTML tags:
+the opening tag=
+    start with a <
+    whatever is inside is the "tag"
+    close with a > 
+<html>
+the closing tag = 
+    start with <
+    add /
+    whatever is inside is the "tag"
+    close with a >
+</html>  -->
+
+<!-- DOCTYPE = tells the browser what this thing is -->
+<!DOCTYPE html>
+<!-- html tag is the overall tag that starts html. Everything in your file should be inside this tag -->
+<html>
+<!-- Head is where the stuff goes that the user is not supposed to see. -->
+<!-- such as style tags, JS files, meta tags, page title, et al.  -->
+<!-- Page needs the head stuff for the body -->
+<head>
+    <!-- meta tags give info about page to someone -->
+    <meta charset="utf-8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- how search engines will list your page  -->
+    <!-- and what will show up at the top of the browser  -->
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link tags link to css file  -->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- script tag links to js file  -->
+    <script src="main.js"></script>
+</head>
+<!-- Stuff inside the body appears on page  -->
+<!-- if the word is solid blue it's a tag
+if the word is light blue it's an attribute
+if the word is white, it's going on the page 
+if the word is green it's a string -->
+<body id="body" class="my-class" my-favorite-team="ATL-United"> 
+    This is the body!
+
+    <!-- div = divider (structural tag)
+    stuctural meaning it does nothing except organize html  -->
+    <div>
+        <h1>Registration</h1>
+    </div>
+
+    <span>
+     another structural tag is a span 
+    </span>
+
+    <p> 
+        a p tag is a paragraph tag, it's also structural 
+    </p>
+
+    <!-- ul= unordered list; ol= ordered list
+    inside of ul/ol are li= list item -->
+
+    <ol>
+        <li>oil change</li>
+        <li>clean house</li>
+        <li>pay bills</li>
+    </ol>
+
+    <ul>
+            <li>oil change</li>
+            <li>clean house</li>
+            <li>pay bills</li>
+    </ul>
+
+    <!-- aesthetic tags: -->
+    <!-- change the way the content looks -->
+    <strong> strong tag bolds text</strong>
+    <!-- draw line -->
+    <hr />
+    <em>em tag italicizes text</em>
+    <sup>superscript tag</sup>
+    <sub>subscript tag</sub>
+    
+    <!-- semanitic tag= -->
+    <!-- structural tag that tells you what's inside, good for screen readers  -->
+    <nav></nav>
+    <footer></footer>
+
+
+    <!-- these are headers (1–6) -->
+    <h1>This is an h1 tag</h1>
+    <h2>This is an h2 tag</h2>
+    <h3>This is an h3 tag</h3>
+    <h4>This is an h4 tag</h4>
+    <h5>This is an h5 tag</h5>
+    <h6>This is an h6 tag</h6>
+
+    <!-- a = anchor tag -->
+    <!-- anchor tag goes somewhere else: -->
+    <a href="https://google.com">A Google Link</a>
+    <a href="tel:8675309">Call Jenny</a>
+
+    <img src=https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwim4puHqPreAhVBtFMKHQ5aADgQjRx6BAgBEAU&url=https%3A%2F%2Fopengameart.org%2Fcontent%2Fdungeon-tileset&psig=AOvVaw0J-emby8l3Ihpvk9fHIPS2&ust=1543605310877439 />
+
+    <form action="" method="">
+        <input type="text" placeholder="Type something"/>
+        <input type="number" placeholder="Enter a number" />
+        <input type="date" placeholder="Enter the date"/>
+        <input type="password" placeholder="Enter password"/>
+        <input type="email" placeholder="enter email" />
+        <input type="submit" value="Submit form" />
+
+    </form>
+
+</body>
+</html>

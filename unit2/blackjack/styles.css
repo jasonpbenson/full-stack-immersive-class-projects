@@ -1,0 +1,214 @@
+body{
+    background-color: rgba(12, 12, 12, 1);
+    background-image: linear-gradient(to right, rgba(208, 0, 0, 0.45), rgba(208,32,0,.10),rgba(208,32,0,.90));
+}
+
+.container{
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1{
+    font-family: 'Metamorphous', cursive;
+    color: white;
+    font-size: 40px; 
+    letter-spacing: 15px;
+    text-align: center;
+}
+
+.table {
+    position: relative;
+    background-image: url("./cards/marble-back.jpg");
+    background-size: 100%; 
+    border: 20px solid transparent;
+    border-image: url("cards/checker-pattern.png") 50 round;
+    border-radius: 0px 0px 40px 40px;
+    padding: 30px 0px; 
+    margin: 50px auto; 
+    width: 800px;
+    height: 400px;
+    perspective: 400px;
+}
+
+img{
+    position: absolute; 
+}
+
+.lounging-devil{
+    width: 160px;
+    top: -93px;
+    left: 698px;
+}
+
+.bunny-catchers{
+    width: 350px;
+    top: -105px;
+    left: -55px;
+}
+
+.pointer{
+    width: 160px;
+    top: 390px;
+    left: 760px;
+}
+
+.card-back-red{
+    top: 290px; 
+    left: 660px;
+    width: 100px;
+    height: 153px;
+    transform: rotate(40deg);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-back-yellow{
+    top: 250px; 
+    left: 650px;
+    width: 100px;
+    height: 153px;
+    transform: rotate(20deg);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-back-grey{
+    top: 260px; 
+    left: 600px;
+    width: 100px;
+    height: 153px;
+    transform: rotate(05deg);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.score-container{
+    position: relative;
+    width: 100px;
+    height: 200px;
+    background-color: rgba(208,32,0,.80);
+    border: 2px solid white; 
+    border-radius: 20px 0px 20px 0px;  
+    left: -103px;
+    top: 28px; 
+}
+
+#score-header-1{
+    position: relative;
+    left: 10px;
+    font-family: 'Metamorphous', cursive;
+    color: white;
+    font-size: 16px;
+}
+
+#score-header-2{
+    position: relative;
+    left: 10px;
+    font-family: 'Metamorphous', cursive;
+    color: white;
+    font-size: 16px;
+}
+
+.player-total{
+    position: relative;
+    font-family: 'Metamorphous', cursive;
+    color: white;
+    font-size: 20px;
+    top: 0px; 
+    left: 20px;
+}
+
+.dealer-total{
+    position: relative;
+    font-family: 'Metamorphous', cursive;
+    color: white;
+    font-size: 20px;
+    top: 0px; 
+    left: 20px;
+    display: none; 
+}
+
+.card{
+    position: relative;
+    width: 100px;
+    height: 153px;
+    margin-right: -30px;
+    display: inline-block;
+    top: -210px;
+    left: 50px;
+}
+
+.card img{
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-1{
+    transform: rotate(2deg);
+}
+
+.card-2{
+    transform: rotate(4deg);
+}
+
+.card-3{
+    transform: rotate(6deg);
+}
+
+.card-4{
+    transform: rotate(8deg);
+}
+
+.card-5{
+    transform: rotate(10deg);
+}
+
+.card-6{
+    transform: rotate(12deg);
+}
+
+.player-cards{
+    height: 153px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.dealer-cards{
+    height: 153px;
+}
+
+button{
+    position: relative;
+    width: 120px;
+    height: 40px;
+    outline: none; 
+    border-radius: 0px 0px 10px 10px; 
+    display: inline;
+    text-align: center;
+    margin-top: 0px;
+    color: azure;
+    background-color:rgba(208,32,0,.80);
+    font-family: 'Metamorphous', cursive;
+    font-size: 30px; 
+    top: -199.1px; 
+}
+
+.hit-button{
+    display: none;
+}
+
+.stand-button{
+    display: none;
+}
+
+.reset-button{
+    display: none;
+}
+
+
+.buttons{
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+button:hover{
+    background-color: white;
