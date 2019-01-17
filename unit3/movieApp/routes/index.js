@@ -23,9 +23,29 @@ router.get('/', function(req, res, next) {
     });
     // console.log(parsedData);
     // res.json(parsedData);
-  })
+  });
 
   // res.render('index', { title: 'Express' });
+});
+
+router.get("/search", (req, res) => {
+  res.render("search");
+});
+
+router.post("/search/movie", (req, res) => {
+  //submitted data from forms comes from the req object
+  //querystring data is in req.query
+  //posted data is in req.body
+  const movieTitle = req.body.movieTitle;
+  // res.json(req.body);
+  const searchUrl = `${apiBaseUrl}/search/movie?query=${movieTitle}&api_key=${apiKey}`;
+  request.get(searchUrl,(error, response, body) => {
+    const parsedData = JSON.parse(body);
+    res.render("now_playing", {
+      imageBaseUrl,
+      parsedData: parsedData.results
+    });
+  });
 });
 
 module.exports = router;

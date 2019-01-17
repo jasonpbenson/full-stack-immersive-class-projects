@@ -12,6 +12,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
+                <% include search %>
                 <% parsedData.forEach((movie) => { %>
                     <div class="col-sm-3">
                         <img src= "<%= imageBaseUrl + movie.poster_path%>" />

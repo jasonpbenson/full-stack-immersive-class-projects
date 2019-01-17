@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- form::action = where to submit form(url) -->
+    <!-- form :: method = what type of http request, ie get, post, put, etc -->
+    <!-- get method passes data/vars through the url as query strings -->
+    <!-- post method passes data through body -->
+
+    <div class="search">
+        <form action="/search/movie" method="post">
+            <!-- input::name = variable passed through url as query string -->
+            search for a movie:<br>
+            <input type="text" name="movieTitle" placeholder="Enter search terms">
+            <input type="button" class="btn btn-primary" value="submit">
+        </form>
+    </div>
+    
+</body>
+</html>
