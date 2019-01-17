@@ -1,0 +1,1 @@
+document.getElementById("firstHeading").style.color = "cyan";

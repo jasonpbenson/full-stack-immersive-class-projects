@@ -1,0 +1,22 @@
+{
+  "name": "node101",
+  "version": "1.0.0",
+  "description": "test package.json",
+  "main": "01-14.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "npm",
+    "javascript"
+  ],
+  "author": "Jason Benson",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {}
+}
