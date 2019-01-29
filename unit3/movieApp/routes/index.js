@@ -1,12 +1,17 @@
 var express = require('express');
 var router = express.Router();
 
-const apiKey = require("../config");
+const config = require('../config');
+
 const apiBaseUrl = "http://api.themoviedb.org/3";
 const imageBaseUrl = "http://image.tmdb.org/t/p/w300";
-const nowPlayingUrl = `${apiBaseUrl}/movie/now_playing?api_key=${apiKey}`;
+const nowPlayingUrl = `${apiBaseUrl}/movie/now_playing?api_key=${config.apiKey}`;
 
 const request = require("request");
+
+const mysql = require('mysql');
+const connection = mysql.createConnection(config.db);
+connection.connect();
 
 // console.log(apiKey);
 // console.log(nowPlayingUrl);
@@ -38,7 +43,7 @@ router.post("/search/movie", (req, res) => {
   //posted data is in req.body
   const movieTitle = req.body.movieTitle;
   // res.json(req.body);
-  const searchUrl = `${apiBaseUrl}/search/movie?query=${movieTitle}&api_key=${apiKey}`;
+  const searchUrl = `${apiBaseUrl}/search/movie?query=${movieTitle}&api_key=${config.apiKey}`;
   request.get(searchUrl,(error, response, body) => {
     const parsedData = JSON.parse(body);
     res.render("now_playing", {
@@ -47,5 +52,16 @@ router.post("/search/movie", (req, res) => {
     });
   });
 });
+
+router.get('/login', (req, res) =>{
+  res.render('login');
+})
+
+router.post('/loginProcess', (req, res) => {
+  const insertQuery = `INSERT into users (email, password)
+  VALUES
+  (?, ?)`
+  res.json(req.body);
+})
 
 module.exports = router;
