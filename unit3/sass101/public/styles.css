@@ -1,0 +1,80 @@
+.text, #content {
+  font-size: 20px;
+  color: black;
+  line-height: 20px;
+  background: cornflowerblue;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+ul li ul li {
+  color: cornflowerblue;
+}
+
+ul li {
+  list-style-type: none;
+}
+ul li ul li {
+  color: blue;
+}
+
+#header {
+  float: left;
+}
+#header ul {
+  background-color: #ddd;
+  float: left;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+#header ul li {
+  background-color: coral;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+}
+
+li:hover {
+  transition: all 2s;
+  position: relative;
+  left: 100px;
+}
+
+.col-1 {
+  width: 100%;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 33.3333333333%;
+}
+
+.col-4 {
+  width: 25%;
+}
+
+.col-5 {
+  width: 20%;
+}
+
+.col-6 {
+  width: 16.6666666667%;
+}
+
+.col-7 {
+  width: 14.2857142857%;
+}
+
+.col-8 {
+  width: 12.5%;
+}
+
+/*# sourceMappingURL=styles.css.map */
