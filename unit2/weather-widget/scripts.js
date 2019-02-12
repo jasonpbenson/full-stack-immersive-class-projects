@@ -14,7 +14,7 @@ $('#weather-form').submit((e)=>{
     // 1. URL to fetch the JSON from
     // 2. the callback to run when the AJAX is back
     $.getJSON(weatherUrl,(weatherData)=>{
-        console.log(weatherData);
+        // console.log(weatherData);
         const currTemp = weatherData.main.temp;
         const temps = {
             curr: weatherData.main.temp,
