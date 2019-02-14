@@ -1,18 +1,19 @@
 // EVERY REACT COMPONENT MUST RETURN A SINGLE DOM ELEMENT
-function Card(){
-    const name = "Alpine Trouble";
-    const title = "react From the Beginning";
-    const saleOn = false;
+function Card(props){
+    const instructor = props.instructor;
+    const course = props.course;
+    const image = props.image;
+    const saleOn = true;
     return (
-        <div className="row">
-            <div className="col s2">
+        <div>
+            <div className="col s3">
                 <div className="card hoverable medium">
                     <div className="card-image">
-                        <img src="http://lorempixel.com/400/400/nature/" />
+                        <img src={image} />
                     </div>
                     <div className="card-content">
-                        <p>{title}</p>
-                        <p>{name}</p>
+                        <p>{course}</p>
+                        <p>{instructor}</p>
                     </div>
                     <div className="card-action">
                         <a href="#">${saleOn ? 9.99 : 59.99}</a>
