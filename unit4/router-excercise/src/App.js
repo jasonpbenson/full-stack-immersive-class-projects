@@ -27,14 +27,16 @@ import About from './About';
 // Use state to setup the return once componentDidMount is done. Style it.
 // Include the Mayor Message.
 
-let atlImages = [
-  'http://i.huffpost.com/gen/1716876/images/o-ATLANTA-TRAFFIC-facebook.jpg',
-  'http://2.bp.blogspot.com/--XZFLg6LSq8/U4YV65sb2MI/AAAAAAAAO8A/cFl-Em5Zb0A/s1600/Sawfish_Atlanta_Aquarium.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/a/a3/Piedmont-park-urban-park.jpg'
-]
 
 class App extends Component {
   render() {
+
+    let atlImages = [
+      'http://i.huffpost.com/gen/1716876/images/o-ATLANTA-TRAFFIC-facebook.jpg',
+      'http://2.bp.blogspot.com/--XZFLg6LSq8/U4YV65sb2MI/AAAAAAAAO8A/cFl-Em5Zb0A/s1600/Sawfish_Atlanta_Aquarium.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/a/a3/Piedmont-park-urban-park.jpg'
+    ];
+
     return (
       <Router>
         <div>
@@ -43,13 +45,8 @@ class App extends Component {
             <h1>Main App</h1>
           </div>
           <Route exact path="/" component={Home} />
-          <Route exact path="/atlweather" component={AtlWeather} />
-          <Route exact path="/images" component={Images} />
-          <Route path="/images" exact render={(props)=>{
-            return(
-              <Images atlImages={atlImages} />
-            )
-          }} />
+          <Route path="/atlweather" component={AtlWeather} />
+          <Route path="/images" render={(props)=><Images data={atlImages} />} />
           <Route exact path="/message" component={MayorMessage} />
           <Route exact path="/about" component={About} />
         </div>

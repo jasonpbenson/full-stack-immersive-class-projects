@@ -1,7 +1,18 @@
+.containerMain{
+  display: flex;
+  flex-direction: column;
+}
+
 .App {
   text-align: center;
 }
 
 .main{
   margin-top: 100px;
+}
+
+.images{
+  max-width: 30vw;
+  justify-self: center;
+  align-self: center;
 }
