@@ -2,11 +2,33 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// import store from redux
+// the store essentially IS redux
+import{ createStore } from 'redux';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// import provider component from react-redux
+// so react and redux can communicate
+// via "connect"
+import { Provider } from 'react-redux';
+
+// need master/root reducter to give to store
+import reducers from './reducers/index';
+
+// make a store for redux to use
+// pass it reducers, which is the export of the root reducer
+// the root reducer is a collection of little reducers returned
+
+const theStore = createStore(reducers);
+
+// provider is the component that makes connect work
+// (connect is inside of the container)
+// it takes a prop of store, which is the reduxStore
+// 
+
+ReactDOM.render(
+    <Provider store={theStore}>
+        <App />
+    </Provider>,
+    document.getElementById('root')
+)
