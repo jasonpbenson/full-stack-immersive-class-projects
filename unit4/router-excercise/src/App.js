@@ -41,9 +41,9 @@ class App extends Component {
       <Router>
         <div>
           <BootstrapNavBar />
-          <div className="container main">
+          {/* <div className="container main">
             <h1>Main App</h1>
-          </div>
+          </div> */}
           <Route exact path="/" component={Home} />
           <Route path="/atlweather" component={AtlWeather} />
           <Route path="/images" render={(props)=><Images data={atlImages} />} />

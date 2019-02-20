@@ -1,7 +1,4 @@
-.containerMain{
-  display: flex;
-  flex-direction: column;
-}
+
 
 .App {
   text-align: center;
@@ -13,6 +10,10 @@
 
 .images{
   max-width: 30vw;
-  justify-self: center;
-  align-self: center;
+}
+
+.active{
+  background-color: coral;
+  padding: 2rem;
+  border-radius: 10px;
 }
