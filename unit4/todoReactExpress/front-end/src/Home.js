@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import moment from 'moment';
+import {Link} from 'react-router-dom';
 
 class Home extends Component{
     constructor(){
@@ -18,6 +20,8 @@ class Home extends Component{
         event.preventDefault();
         console.log("form submitted");
         this.props.addNewTask(this.state.task, this.state.date);
+        // props = inherited from parent
+        // look to the parent to find the thing
     }
 
     changeTask(event){
@@ -33,6 +37,15 @@ class Home extends Component{
     }
     
     render(){
+        const taskArray = this.props.taskList.map((task)=> {
+            return (
+                <tr key={task.id}>
+                    <td>{task.taskName} - {moment(task.taskDate).format('MM-DD-YYY')}</td>
+                    <td><button className="btn red">Delete</button></td>
+                    <td>< Link to={"/edit/"+task.id}><button className="btn blue">Edit</button></Link></td>
+                </tr>
+            )
+        })
         return(
             <div className="to-do-app">     
                 <div className="section no-pad-bot" id="index-banner">
@@ -58,7 +71,7 @@ class Home extends Component{
                             </tr>
                         </thead>
                         <tbody>
-                        
+                            {taskArray}
                         </tbody>
                     </table>
                 </div>

@@ -4,10 +4,29 @@ import NavBar from './NavBar';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './Home';
 import axios from 'axios';
+import Edit from './Edit';
 
 class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      taskList: []
+    }
+  }
 
-  addNewTask(task, date){
+  componentDidMount(){
+    axios({
+      method: 'GET',
+      url: 'http://localhost:3000/getTasks'
+    }).then((taskListFromBackEnd)=> {
+      console.log(taskListFromBackEnd);
+      this.setState({
+        taskList: taskListFromBackEnd.data
+      })
+    })
+  }
+
+  addNewTask = (task, date)=> {
     console.log(task, date);
     axios({
       method: 'POST',
@@ -18,6 +37,9 @@ class App extends Component {
       }
     }).then((backEndResponse)=>{
       console.log(backEndResponse);
+      this.setState({
+        taskList: backEndResponse.data
+      })
     })
   }
 
@@ -26,9 +48,11 @@ class App extends Component {
       <Router>
         <div className="App">
           <NavBar />
+          {/* render passes props */}
           <Route exact path="/" render={()=> {
-            return(<Home addNewTask={this.addNewTask} />)
+            return(<Home taskList={this.state.taskList} addNewTask={this.addNewTask} />)
           }} />
+          <Route exact path="/edit/:id" component={Edit} />
         </div>
       </Router>
     );
