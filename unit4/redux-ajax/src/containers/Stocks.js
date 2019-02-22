@@ -8,4 +8,4 @@ class Stocks extends Component{
     }
 }
 
-export default Stocks
+export default Stocks;
