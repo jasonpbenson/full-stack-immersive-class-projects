@@ -25,6 +25,10 @@ import reduxPromise from 'redux-promise' //9
 // const theStore = createStore(reducers); //6
 
 const theStoreWithMiddleware = applyMiddleware(reduxPromise)(createStore)(reducers); //10
+// the line above is the same as the following:
+// middleware = applyMiddleware(reduxPromise);
+// theStore = middleware(createStore);
+// theStoreWithMiddleware = theStore(reducers);
  
 ReactDOM.render(
     <Provider store={theStoreWithMiddleware}>

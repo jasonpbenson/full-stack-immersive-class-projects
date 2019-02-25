@@ -1,0 +1,9 @@
+.home{
+    border: 2px solid black;
+    margin: 1rem;
+}
+
+.home img{
+    width: 50%;
+    margin: 1rem auto;
+}
