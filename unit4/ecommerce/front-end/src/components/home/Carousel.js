@@ -14,9 +14,9 @@ function Carousel(props){
     }
     return(
         <Slider {...settings}>
-            <div className="slick-image homePageImage"><img src="/images/greenMen/homepage1_1.jpg"/></div>
-            <div className="slick-image homePageImage"><img src="/images/greenMen/homepage1_2.jpg"/></div>
-            <div className="slick-image homePageImage"><img src="/images/greenMen/homepage1_3.jpg"/></div>
+            <div className="slick-image homePageImage"><img src="/images/greenMen/spirit_1.jpg"/></div>
+            <div className="slick-image homePageImage"><img src="/images/greenMen/spirit_2.jpg"/></div>
+            <div className="slick-image homePageImage"><img src="/images/greenMen/spirit_3.jpg"/></div>
         </Slider>
     )
 }

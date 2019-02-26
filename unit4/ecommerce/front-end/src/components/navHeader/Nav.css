@@ -1,0 +1,30 @@
+.logo-search-header img{
+    height: 90px;
+}
+
+.header{
+    color: #969696;
+}
+
+.header .login-nav-bar{
+    height: 2rem;
+}
+
+.header .btn-github{
+    background-size: contain;
+    color: black;
+    background-color: white;
+    border-color: rgba(0,0,0,0.2);
+    background-repeat: no-repeat;
+    background-position: 5px;
+    width: 15rem;
+    height: 2rem;
+}
+
+.btn-github:hover{
+    color: #e60000;
+}
+
+.login-nav-bar{
+    height: 30px;
+}
