@@ -1,9 +1,9 @@
-.home{
+.homeContainer{
     border: 2px solid black;
     margin: 1rem;
 }
 
-.home img{
+.homeContainer img{
     width: 50%;
     margin: 1rem auto;
 }

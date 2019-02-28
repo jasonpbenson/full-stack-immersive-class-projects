@@ -1,5 +1,26 @@
+/* fonts */
+/* font-family: 'Special Elite', cursive;
+font-family: 'Baumans', cursive;
+font-family: 'Kurale', serif;
+font-family: 'Tulpen One', cursive;
+font-family: 'Rakkas', cursive;
+font-family: 'MedievalSharp', cursive; */
+
 .logo-search-header img{
     height: 90px;
+}
+
+.logoContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 20vw;
+    height: 15vw;
 }
 
 .header{
@@ -10,21 +31,13 @@
     height: 2rem;
 }
 
-.header .btn-github{
-    background-size: contain;
-    color: black;
-    background-color: white;
-    border-color: rgba(0,0,0,0.2);
-    background-repeat: no-repeat;
-    background-position: 5px;
-    width: 15rem;
-    height: 2rem;
-}
-
-.btn-github:hover{
-    color: #e60000;
-}
-
 .login-nav-bar{
-    height: 30px;
+    font-family: 'Special Elite', cursive;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
 }
+

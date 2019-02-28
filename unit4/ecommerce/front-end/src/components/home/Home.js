@@ -7,7 +7,7 @@ import './home.css';
 class Home extends Component{
     render(){
         return(
-            <div className="col s12 home">
+            <div className="homeContainer">
                 <Carousel />
                 <MiniNav />
                 <Content />
